@@ -39,7 +39,7 @@ Between these 2 over sampling methods, SMOTE Over Sampling would be the better o
 
 ![Cluster_Centroid_Under_Sampling](/Images/Under_Sampling_Results.png)
 
-|                                  | Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
+|                     | Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
 |----------------------------------|-------------------------|---------------------------|------------------------|--------------------------|-----------------------|| Cluster Centroids Under Sampling | 0.524682188835512       | 0.006142                  | 0.597938               | 0.994976                 | 0.451426              |
 
 The cluster centroid under sampling has an accuracy score of 52.4%. The high risk credit request precision has a value of 0.6% and a recall of 59%. The low risk credit request precision has a value of 99.4% and a recall of 45%. 
@@ -50,7 +50,7 @@ The F1 score for this method for high risk requests is really low, with a value 
 
 ![SMOTEENN_Combined_Sampling](/Images/SMOTEEN_Results.png)
 
-|                                  | Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
+|                     |Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
 |----------------------------------|-------------------------|---------------------------|------------------------|--------------------------|-----------------------|| SMOTEENN Combination Sampling    | 0.6787636579257549      | 0.010211                  | 0.793814               | 0.997930                 | 0.563713              |
 
 The SMOTEENN method has a balanced accuracy of 67.8%. Among the logistic regression models, SMOTEEN has the highest Recall and F1 score for high risk credit which means that this model is more likely to identify the actual high risk requests correctly. 
@@ -61,7 +61,7 @@ While its low risk precision is 99%, meaning that whenever the model flags a req
 
 ![Ensemble_Model_Results](/Images/Ensemble_Results.png)
 
-| Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
+|                     | Balanced Accuracy Score | Precision Score High Risk | Recall Score High Risk | Precision Score Low Risk | Recall Score Low Risk |
 |-----------------------------------|-------------------------|---------------------------|------------------------|--------------------------|-----------------------|| Balanced Random Forest Classifier | 0.7957716773246495      | 0.046132                  | 0.670103               | 0.997974                 | 0.921440              |
 | Easy Ensemble AdaBoost Classifier | 0.9179891724857726      | 0.090336                  | 0.886598               | 0.999323                 | 0.949380              |
 
